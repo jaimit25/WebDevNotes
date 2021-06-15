@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>float clear</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: 'Courier New', Courier, monospace;
+		}
+		.container{
+			line-height: 20px;
+			width: 900px;
+			border: 3px solid purple;
+			margin: 33px auto;
+		}
+		.item{
+			border: 3px solid grey;
+			margin: 12px 3px;
+			padding: 12px 3px;
+			background-color:rgb(213, 226, 191);
+		} 
+		#fruits{
+			float: left;
+			width: 42%;
+		}
+		#stationary{
+			/* float: left; */
+			/* clear:left; */
+			clear: both;
+			/* clear property says that no floast left property will interact with it */
+			width: 100%;
+
+		}
+		#computer{
+			float: right;
+			width: 42%;
+		}
+		p,h1{
+			text-align: right;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+
+		<div id="fruits" class="item">
+			<h3>Fruits</h3>
+			<p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem aspernatur, aliquid sunt laudantium error tenetur quasi ullam provident voluptatibus nam! Inventore, laborum voluptas? Ex similique dolor voluptates quibusdam nemo.</p>
+		</div>
+
+		<div id="computer" class="item">
+			<h3>Computer</h3>
+			<p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem aspernatur, aliquid sunt laudantium error tenetur quasi ullam provident voluptatibus nam! Inventore, laborum voluptas? Ex similique dolor voluptates quibusdam nemo.</p>
+		</div>
+
+		<div id="stationary" class="item">
+			<h3>Stationary</h3>
+			<p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem aspernatur, aliquid sunt laudantium error tenetur quasi ullam provident voluptatibus nam! Inventore, laborum voluptas? Ex similique dolor voluptates quibusdam nemo.</p>
+		</div>
+
+	</div>
+</body>
+
+</html>

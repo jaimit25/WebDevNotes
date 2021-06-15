@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Website</title>
+</head>
+<style>
+	body {	
+		/* height: 1200px; */
+		margin: 0px;
+		padding: 0px;
+		/* background: url('https://images.unsplash.com/photo-1521999693742-4717d76f97cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGFyZCUyMHdvcmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Andromeda_Galaxy_560mm_FL.jpg/1200px-Andromeda_Galaxy_560mm_FL.jpg'); */
+
+		background: url('https://wallpapercave.com/wp/wp6899725.jpg');
+
+		/* background:url('https://chapelstreet.church/wp-content/uploads/2016/05/photo-1452882628481-6a2da9481239.jpeg'); */
+
+		background-repeat: no-repeat;
+		background-size: 100%;
+		color: white;
+	}
+
+	#left {
+		position: absolute;
+		/* border: 2px solid green; */
+		/* top: 20px; */
+		display: inline-block;
+		left: 10px;
+		box-sizing: border-box;
+		font-size: 20px;
+		width: 100px;
+		background-color: red;
+		background: url('img/logo.png');
+		/* margin: 20px; */
+
+	}
+
+	#mid {
+		/* position: absolute; */
+		/* border: 2px solid green; */
+		display: block;
+		margin: 20px auto;
+		width: 430px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+	}
+
+	#right {
+		position: absolute;
+		display: inline-block;
+		/* border: 2px solid green; */
+		top: 20px;
+		right: 30px;
+		/* margin: 20px; */
+	}
+
+	header a {
+		text-decoration: none;
+		color: white;
+	}
+
+	li {
+		text-decoration: none;
+	}
+
+	.navbar li {
+		display: inline;
+
+	}
+
+	a {
+		margin: 0px 20px;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.navbar a:hover {
+		margin: 0px 20px;
+		cursor: pointer;
+		color: peru;
+		font-size: 22px;
+	}
+
+	.btn {
+		background-color: rgba(5, 5, 5, 0.315);
+		color: white;
+		border: 1px solid white;
+		border-radius: 10px;
+		height: 40px;
+		width: 70px;
+		/* padding:10px 10px; */
+		text-align: center;
+		font-size: 20px;
+		/* margin-top: 0px 20px; */
+	}
+
+	.btn:hover {
+		cursor: pointer;
+		background-color: peru;
+	}
+
+	#btn1 {
+		margin-right: 20px;
+	}
+
+	.logo {
+		float: left;
+		height: 50px;
+		width: 80px;
+		filter: invert(100%);
+	}
+
+	.container {
+		/* border: 1px solid white; */
+		border-radius: 10px;
+		display: inline-block;
+		font-size: 80px;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-weight: bold;
+	}
+
+	p {
+		margin: 0px;
+	}
+	.head{
+		margin: auto;
+		position : absolute;
+		top : 200px;
+		left: 90px;
+	}
+	.leftover{
+		position: relative;
+		top : 30px;
+		font-size: 30px;
+		display: block;
+		width:500px;
+	}
+</style>
+
+<body>
+
+	<header class="header">
+		<div class="box" id="left">
+			<img class="logo" src="img/logo.png" alt="">
+		</div>
+
+		<div class="box" id="mid">
+			<div class="navbar">
+				<ul>
+					<li><a class="item" href="#">Home</a></li>
+					<li><a class="item" href="#">Contact Us</a></li>
+					<li><a class="item" href="#">Centers</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="box" id="right">
+			<button class="btn" id="btn1">Ask</button>
+			<button class="btn" id="btn2">Login</button>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="head">
+			<p>Hi</p>
+			<p>There,</p>
+			<div class="leftover">
+			Welcome to the Coding Community here you will be taugth to Explore whole new different Era of Programming...
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>

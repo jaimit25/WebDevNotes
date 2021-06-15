@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Position</title>
+	<style>
+		/* postion static(default), absolute ,relative ,fixed and sticky */
+		.box {
+			border: 2px solid red;
+			height: 150px;
+			width: 150px;
+			display: inline-block;
+		}
+
+		#box3 {
+			/* position: relative; */
+			/* if postion is relative then we can use top bottom left right  */
+			/* relative means -> relative to its normal postion */
+			/* top: 30px;
+			left: 50px; */
+
+
+
+			/* position: absolute; */
+			/* absolute means -> relative to its parent postion */
+			/* here parent position is container class division */
+			/* top: 30px;
+			left: 1000px; */
+
+
+
+			/* postion fix will make it stay at one position */
+			/* position:fixed; */
+			/* left:100px; */
+			/* right:100px; */
+
+
+
+			/* postion sticky */
+			/* position: sticky; */
+			/* mostly use to fix navigation menu up at the screen */
+
+			
+
+		}
+		.container {
+			border:2px solid black;
+			background-color: khaki;
+			height: 300px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="box" id="box1">1</div>
+		<div class="box" id="box2">2</div>
+		<div class="box" id="box3">3</div>
+		<div class="box" id="box4">4</div>
+	</div>
+
+
+
+</body>
+
+</html>

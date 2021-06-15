@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Display</title>
+	<style>
+
+		*{
+			box-sizing: border-box;
+		}
+		header {
+			margin: auto;
+			border: 2px solid red;
+			width: 1200px;
+			/* display: inline; */
+			/* width: 15%; */
+			/* for block element we can set width and inline will wrap the element so if we uncomment display then it will move to left and become inline */
+		}
+
+		img {
+			width: 50px;
+			/* img is inline element so margin auto to bring in center will not work here so we have to make it block element */
+			display: block;
+			margin: auto;
+		}
+
+		h3 {
+			/* h3 is block element so it will consume whole space even if convert header to inline so we also have to do h3 as inline */
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			/* display : inline; */
+			text-align: center;
+		}
+		.box{
+			border:4px solid black;
+			background-color: grey;
+			margin: 4px 0px;
+			padding: 23px ;
+			display: inline-block;
+			width: 30%;
+			box-sizing: border-box;
+			/* box sizing will make the size margin everthing fix otherwise width may change */
+
+		}
+
+		/* we cannot set width of inline elements */
+		/* and also block elements take full width */
+		/* so we can use inline-block so elements will not take whole row and we can also set the width */
+
+		.container{
+			margin: auto;
+			width: 1200px;
+			/* display: inline-block; */
+		}
+	</style>
+</head>
+
+<body>
+	<header class="top">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwS9v9MYqLMLsQi9Pxf3dAHiMGMTxMmEcROg&usqp=CAU"
+			alt="Not Found">
+
+		<h3>welcome to display</h3>
+
+	</header>
+
+
+	<div class="container">
+		<div class="box">
+			<h4 class="heading">Heading</h4>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias modi odit nostrum quasi
+				totam aliquam delectus similique doloremque assumenda illo tempore, quaerat dolorem
+				maxime facere cupiditate voluptas dolor hic accusamus amet dolorum. Obcaecati omnis
+				autem libero placeat modi iusto assumenda sunt est totam excepturi.</p>
+		</div>
+		<div class="box">
+			<h4 class="heading">Heading</h4>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias modi odit nostrum quasi
+				totam aliquam delectus similique doloremque assumenda illo tempore, quaerat dolorem
+				maxime facere cupiditate voluptas dolor hic accusamus amet dolorum. Obcaecati omnis
+				autem libero placeat modi iusto assumenda sunt est totam excepturi.</p>
+		</div>
+		<div class="box">
+			<h4 class="heading">Heading</h4>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias modi odit nostrum quasi
+				totam aliquam delectus similique doloremque assumenda illo tempore, quaerat dolorem
+				maxime facere cupiditate voluptas dolor hic accusamus amet dolorum. Obcaecati omnis
+				autem libero placeat modi iusto assumenda sunt est totam excepturi.</p>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

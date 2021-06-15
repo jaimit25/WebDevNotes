@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navigation</title>
+	<style>
+		* {
+			margin: 3px;
+		}
+
+		.navbar {
+			background-color: black;
+			/* box-sizing: border-box; */
+			/* border-radius:4px; */
+		}
+
+		.navbar li {
+			float: left;
+			list-style: none;
+			padding: 3px;
+
+			margin: 12px 12px;
+		}
+
+		/* whenever we use float it overflow from parent so to avoid */
+		.navbar ul {
+			overflow: auto;
+		}
+
+		.navbar li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.navbar li a:hover {
+			color: green;
+			font-size: 17px;
+		}
+
+		.search {
+			float: right;
+			color: white;
+
+
+		}
+
+		.searchbox {
+			margin: 5px;
+			height: 25px;
+			width: 200px;
+			padding:3px 3px;
+			border-radius: 10px;
+			border: 3px solid black;
+
+		}
+		#imgsearch{
+			height: 25px;
+			width:25px;
+			background : url('https://tse4.mm.bing.net/th?id=OIP.LwNGX9Hx0mIyG98BgbbpMwHaHa&pid=Api&P=0&w=300&h=300');
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<ul>
+				<li> <a href="#" class="">Home</a> </li>
+				<li> <a href="#" class="">Contact</a> </li>
+				<li> <a href="#" class="">About Us</a> </li>
+				<li> <a href="#" class="">Services</a> </li>
+				<div class="search">
+					<!-- This is Search Box -->
+					<input type="text" class="searchbox" placeholder="Search for website">
+					
+					</input>
+					<span id="imgsearch"></span>
+				</div>
+
+			</ul>
+
+
+		</nav>
+	</header>
+</body>
+
+</html>

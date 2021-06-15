@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Border</title>
+
+	<style>
+		#firstpara {
+			color: rgb(82, 17, 73);
+			background-color: bisque;
+			height: 100px;
+			width: 200px;
+			/* border-color: green;
+			border-style: solid;
+			border-width: 2px; */
+
+			/* we can also write this` as */
+			border: 2px solid red;
+			border-radius: 10px;
+		}
+
+		#parasec {
+			background-color: rosybrown;
+			height: 50px;
+			width: 300px;
+			border-top: 2px red solid;
+			border-bottom: solid red 2px;
+			border-top-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+
+		#parathree {
+			height: 300px;
+			width: 300px;
+			background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnoqSnA6-kjLbxh_364cpKDUrG-T8-N-FoA&usqp=CAU');
+			border: 2px solid red;
+			background-repeat: no-repeat;
+			/*  center and top     or center and center   many more left right top bottom */
+			background-position: center center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Border</h1>
+	<p id="firstpara">this is para </p>
+
+	<h1>Border</h1>
+	<p id="parasec">this is para 2 </p>
+
+	<h1>Border</h1>
+	<p id="parathree">this is para 3</p>
+
+</body>
+
+</html>
