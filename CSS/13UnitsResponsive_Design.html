@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Units + Responsive Design</title>
+	<style>
+
+		/* vh is Viewport Height so if it set to 100vh then it will take full screen height */
+		/* vw is Viewport width so if it set to 100vh then it will take full screen width */
+		body{
+			margin: 0px;
+		}
+		.container{
+			font-size: 10px;
+			border:2px solid red;
+
+			/* width: 400px; */
+			width: 100vw;
+
+			/* height: 300px; */
+			height:100vh;
+		}
+		h1{
+			text-align: center;
+		}
+
+		/* em unit set font size according to parent container */
+		/* em is used when parent element is resized then they(internal elements) should also be resized Automatically*/
+		html{
+			font-size: 25px;
+		}
+		/* rem units works related to html size or root element link html in our case*/
+		#first{
+			/* font-size:3em; */
+			/* 10em means into 10 size of parent container font */
+
+			/* padding:3em; */
+			/* now this will consider the above fontsize and make it to 3*3*10 = 90px */
+		}
+		#second{
+			/* font-size: 3rem;
+			padding: 3rem; */
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1 id = "first">this is Heading</h1>
+		<h1 id = "second">this is Heading2</h1>
+		<h1 id = "third">this is Heading3</h1>
+	</div>
+
+</body>
+
+</html>
