@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Selectors</title>
+</head>
+<style>
+	h1 {
+		background-color: red;
+		color: white;
+		font-weight: bold;
+		text-align: center;
+	}
+	div p{
+		color: green;
+		font-weight: bold;
+		background-color: pink;
+	}
+	.container aside p{
+		color: blue;
+	}
+
+	/* the p should be directly under div tag */
+	div > p{
+		background-color:black;
+		color:white;
+	}
+
+
+</style>
+
+<body>
+	<h1>This is more on Selectors</h1>
+	<div class="container">
+		<div class="row">
+			<p>this is Paragraph</p>
+		</div>
+		<p>this is another Paragraph</p>
+		<aside>
+			<p>this is aside tag</p>
+		</aside>
+	</div>
+	<p>This is Outermost Paragraph</p>
+
+
+
+</body>
+
+</html>
