@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions</title>
+	<style>
+		body{
+			background-color:black;
+		}
+	#box{
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		height: 200px;
+		width: 200px;
+		background-color: red;
+
+		/* write the property which we want to change */
+		/* this will only allow us to change background color  */
+		/* transition-property: background-color; */
+		/* we can also use all to change any property  */
+		transition-property:all;
+
+
+		transition-duration: 2s;
+		transition-timing-function: ease-out;
+		transition-delay: 0.5s;
+
+		/* shorthand for transition */
+		/* transition: background-color 1s ease-in 3s; */
+	}
+ 
+	#box:hover{
+		background-color: white;
+		height: 90px;
+		width: 90px;
+		border-radius: 100px;
+		font-size: 12px;
+	}
+	</style>
+</head>
+<body>
+	<h3>This is CSS Transitions</h3>
+	<div class="container">
+		<div class="boxx" id="box">
+			This is My box
+		</div>
+	</div>
+</body>
+</html>
