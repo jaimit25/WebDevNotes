@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Before And After Selector</title>
+	<style>
+		body{
+			background-color:black;
+			color: white;
+			margin: 0px;
+			padding: 0px;
+			/* background:url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center/cover;  */
+		}
+		/* .navbar  li{
+			display:inline;
+		} */
+		section {
+			height: 300px;
+			display: flex;
+			flex-direction: column;
+			margin: 3px 23px;
+			align-items: center;
+			/* border: 1px solid red; */
+			justify-content: center;
+		}
+		.navigation{
+			display: flex;
+			font-size: 20px;
+			/* margin: 0px; */
+		}
+		li{
+			list-style: none;
+			padding: 20px 23px ;
+			font-style: bold;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		/* section::before{
+			content: "This is Content";
+		} */
+		/* section::after{
+			content: "This is Content";
+		} */
+		h1{
+			font-size:3rem;
+		}
+		p{
+			text-align: center ;
+		}
+
+		/* this will be shown before header */
+		header::before{
+			content: "";
+			background:url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center/cover; 
+			position:absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			top: 0px;
+			left: 0px;
+			opacity: 0.3px;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+
+			<ul class="navigation">
+				<li class="item">Home</li>
+				<li class="item">About</li>
+				<li class="item">Services</li>
+				<li class="item">Contact Us</li>
+			</ul>
+		</nav>
+
+		<section>
+
+			<h1>Welcome to this Website </h1>
+
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam est nam unde deserunt sunt cumque blanditiis. Nobis vel saepe inventore dolore fugiat.</p>
+
+		</section>
+		<!-- <hr> -->
+	</header>
+</body>
+</html>

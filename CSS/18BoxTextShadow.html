@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Box and Text shadow</title>
+	<style>
+		.container {
+		display: flex;
+		}
+
+		.card{
+			padding: 20px 10px ;
+			/* border:2px solid rgb(173, 7, 173); */
+			margin:20px 12px;
+			background-color: rgb(194, 133, 212);
+
+			/* for box shadow above use negative values and positive for bottom */
+			/* box-shadow: 4px 4px 10px  3px grey; */
+			/* third parameter is blue radius */
+			/* 4th parameter is spread radius in all 4 direction */
+
+			/* box-shadow: inset 3px 15px green; */
+			/* inset will set inside shadow of element */
+
+			box-shadow: 3px 15px green ,6px 19px red ;
+			/* multiple box shadow */
+		}
+
+		.card h2{
+			text-shadow: 2px 2px 2px white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="card" id="card1">
+			<h2>This is c++ Course</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ratione consectetur obcaecati praesentium hic voluptas iste! Quam, ipsam quia, adipisci doloribus, omnis necessitatibus commodi ex cumque eligendi a eos. Perspiciatis?</p>
+		</div>
+		<div class="card" id="card2">
+			<h2>this is HTML couse 2</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ratione consectetur obcaecati praesentium hic voluptas iste! Quam, ipsam quia, adipisci doloribus, omnis necessitatibus commodi ex cumque eligendi a eos. Perspiciatis?</p>
+		</div>
+		<div class="card" id="card3">
+			<h2>This is CSS course</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ratione consectetur obcaecati praesentium hic voluptas iste! Quam, ipsam quia, adipisci doloribus, omnis necessitatibus commodi ex cumque eligendi a eos. Perspiciatis?</p>
+		</div>
+	</div>
+</body>
+
+</html>

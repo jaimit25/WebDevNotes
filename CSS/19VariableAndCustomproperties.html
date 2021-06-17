@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Variable and Custom Properties </title>
+	<style>
+
+		/* to add variable globally we need to use root  */
+		/* variable created inside root can be used everywhere inside style tag */
+		:root{
+			--boxcol:black;
+			--maxwidth:300px;
+		}
+		.box{
+			/* -- is use to create variable in CSS followed by property */
+			--box-color:green;
+			width: 200px;
+			height: 200px;
+			/* for using variable we have to denote this var(--nameOfVar) */
+			background-color: var(--box-color);
+			border: 2px solid red;
+			box-shadow: 3px 4px 3px var(--boxcol);
+			margin:2px 10px;
+			
+		}
+		#box2{
+			width:var(--maxwidth);
+		}
+		
+		.container{
+			display: flex;
+			align-items: center;
+			width:100%;
+			justify-content:center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box" id="box2"></div>
+		<div class="box"></div>
+	</div>
+</body>
+
+</html>

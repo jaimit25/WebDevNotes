@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Html and Pseudo Selector</title>
+
+	<style>
+		input {
+			display: block;
+		}
+
+
+		/* pseudo selector */
+		input[type="text"] {
+			padding: 10px;
+			border: 2px solid red;
+
+		}
+
+		/* select a link with taregt */
+		a[target]{
+			color:blue;
+		}
+		a[target='_self']{
+			color:green;
+		}
+
+		input {
+		display: block;
+			}
+
+			/* This will aplly css for third child */
+		li:nth-child(2){
+		color:yellow; 
+		}
+			/* this will apply selector as even  */
+			/* n = 0  so 2(0)+2 */
+			/* similarly for n = 0,1,2,3,4 */
+		li:nth-child(2n+0){
+		color:yellow; 
+		}
+
+		/* we can directly select for even and odd values */
+		li:nth-child(odd){
+			background-color:tomato;
+		}
+
+	.container {
+		/* background-color:green; */
+		margin: 34px 24px;
+		display: block;
+		padding: 20px 20px;
+		margin: auto;
+		width: 300px;
+	}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1><a href="http://google.com" target="_blank"> Google </a></h1>
+		<h1><a href="http://google.com" target="_self"> Google 2 </a></h1>
+
+		<form action="" class="formcontrol">
+			<input type="text" class="" placeholder="Enter Your Name">
+			<input type="password" class="" placeholder="Enter Your Password">
+			<input type="submit" value="Submit">
+		</form>
+		<ul>
+		<li class="item" id="item1">Item1</li>
+		<li class="item" id="item2">Item2</li>
+		<li class="item" id="item3">Item3</li>
+		<li class="item" id="item4">Item4</li>
+		<li class="item" id="item5">Item5</li>
+		</ul>
+	</div>
+
+</body>
+
+</html>
