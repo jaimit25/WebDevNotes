@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grid Gap Rows</title>
+	<style>
+		.grid{
+			display: grid;
+			border: 1px solid black;
+			grid-template-rows: 2fr 1fr 4fr;
+			grid-gap: 2px;
+			grid-auto-rows: 3fr;
+			padding: 2px;
+
+			grid-template-columns: 200px auto;
+		}
+		.box{
+			border: 1px solid black;
+			padding: 3px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="grid">
+		<div class="box">is is box-1</div>
+		<div class="box">is is box-2</div>
+		<div class="box">is is box-3</div>
+		<div class="box">is is box-4</div>
+		<div class="box">is is box-5</div>
+		<div class="box">is is box-6</div>
+		<div class="box">is is box-7</div>
+		<div class="box">is is box-8</div>
+		<div class="box">is is box-9</div>
+		<div class="box">is is box-10</div>
+	</div>
+</body>
+</html>

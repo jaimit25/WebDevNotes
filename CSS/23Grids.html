@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grids</title>
+	<style>
+		.container {
+			display: grid;
+			border: 1px solid black;
+			/* Create 3 columns with width 300 100 and 100 pixels */
+			/* grid-template-columns: 200px 100px 100px;  */
+			grid-template-columns: 200px auto 100px; 
+			/* grid-template-columns: 1fr 4fr 1fr; */
+
+			/* repeat 10 times and make width as Auto */
+			/* grid-template-columns: repeat(10, auto) ;  */
+
+			grid-gap: 1rem;
+
+		}
+		.item{
+			/* height:100px;
+			width:100px; */
+			background: red;
+			margin:3px;
+			border: 2px solid black;
+		}
+		#itemE{
+			height: 100px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!--shortcut :  div.item{this is item-$} -->
+
+
+		<div class="item">This is Item-1</div>
+		<div class="item">This is Item-2</div>
+		<div class="item">This is Item-3</div>
+		<div class="item">This is Item-4</div>
+		<div class="item">This is Item-5</div>
+		<div class="item">This is Item-6</div>
+		<div class="item">This is Item-7</div>
+		<div class="item">This is Item-8</div>
+		<div class="item">This is Item-9</div>
+		<div class="item">This is Item-10</div>
+		<div class="item" id = "itemE">This is Item-11</div>
+		<div class="item">This is Item-12</div>
+		<div class="item">This is Item-12</div>
+		<div class="item">This is Item-12</div>
+	</div>
+
+</body>
+
+</html>
