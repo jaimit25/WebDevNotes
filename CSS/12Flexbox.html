@@ -9,14 +9,14 @@
 </head>
 <style>
 	.container {
-		height:344px;
+		height: 344px;
 		width: 100%;
-		border:2px solid black;
+		border: 2px solid black;
 		display: flex;
 
 		/* flex box need a container which is defined by display flex */
 		/* properties of flex container */
-		
+
 		/* flex-direction is bydefault row */
 		/* flex-direction: column; */
 
@@ -34,14 +34,13 @@
 		/* it will align items to the center of the container*/
 		/* align-items: center; */
 		/* flex end flex start */
-
-	
 	}
-	.item{
-		background-color:tomato;
+
+	.item {
+		background-color: tomato;
 		border: 2px solid red;
-		margin:10px;
-		width:200px;
+		margin: 10px;
+		width: 200px;
 		height: 200px;
 		/* display: inline; */
 		/* this are flex item */
@@ -49,12 +48,13 @@
 	}
 
 	/* order will choose the arrangement of the box  */
-	#item1{
+	#item1 {
 		/* order: 12; */
 		/* flex-grow: 3; */
-	/* value with flex grow will take more area */
+		/* value with flex grow will take more area */
 	}
-	#item2{
+
+	#item2 {
 		/* order:11; */
 		/* flex-shrink: 2; */
 
@@ -62,31 +62,27 @@
 		/* when flex direction is set to row then flex direction will control the width of container */
 		/*and when flex direction is set to Column then flex direction will control the height of container */
 		/* flex-basis: 120px; */
-		
+
 	}
-	#item3{
+
+	#item3 {
 		/* order: 10; */
 		/* using flex we can control flex grow flex shrink flex basis */
 		/* flex: 2 2 120px; */
 		align-self: flex-end;
-		
 	}
 </style>
 
 <body>
 
 	<h1>FlexBox</h1>
-
-
 	<div class="container">
-
 		<div class="item" id="item1"> first box</div>
 		<div class="item" id="item2"> second box</div>
 		<div class="item" id="item3"> third box</div>
 		<!-- <div class="item" id="item4"> fourth box</div>
 		<div class="item" id="item5"> fifth box</div>
 		<div class="item" id="item6"> sixth box</div> -->
-
 	</div>
 
 </body>

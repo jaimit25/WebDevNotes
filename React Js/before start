@@ -1,0 +1,12 @@
+if we install anything permanently for the project we use npm 
+but if we dont want to install package permanenetly then we use npx
+
+
+Create react project 
+-->npx create-react-app my-app
+Start react Project
+-->npm start
+
+
+Extension
+ES7 React/Redux/GraphQL/React-Native snippets
